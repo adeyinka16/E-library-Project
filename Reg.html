@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login & Registration</title>
+	<link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+	<link rel="stylesheet" href="validation.css">
+</head>
+<body>
+    <div class="container form-container d-flex justify-content-center align-items-center opacity-75 col-12 col-md-6 col-lg-5 shadow-lg  bg-dark text-white p-4 mt-4">
+		<div id="LoginAndRegistrationForm">
+			<h1 id="formTitle" class="text-align-center text-center fs-2 pt-1">Login</h1>
+			<div id="formSwitchBtn" class=" d-flex justify-content-center mt-3">
+				<button onclick="ShowLoginForm()"  id="ShowLoginBtn" class="active">Login</button>
+				<button onclick="ShowRegistrationForm()" id="ShowRegistrationBtn">Sign Up</button>
+			</div>
+			<div id="LoginFrom">
+				<form action="#">
+					<div class="center mt-3">
+						<input id="LoginEmail" class="input-text" type="text" placeholder="Email Address">
+						<input id="LoginPassword" class="mt-4 input-text" type="password" placeholder="Password">
+					</div>
+					
+					<div class="forgot-pass-remember-me d-flex justify-content-center text-white gap-3 mt-3">
+						<div class="forgot-pass ">
+ 							<a id="ForgotPassword" href="#" onclick="ShowForgotPasswordForm()">Forgot Password?</a>
+						</div>
+						<div class="remember-me ">
+							<input id="rememberMe" type="checkbox"><label for="rememberMe">Remember Me</label>
+						</div>
+					</div>
+
+					<div class="center mt-4">
+						<input onclick="return ValidateLoginForm();"  class=" Submit-Btn" type="submit" value="Login" id="LoginBtn">
+					</div>
+				</form>
+				<p class="center mt-2  dont-have-account">
+					Don't have an account? 
+					<a href="#" onclick="ShowRegistrationForm()">Register now</a>
+				</p>
+			</div>
+			<div id="RegistrationFrom">
+				<form action="#">
+					<div class="center mt-3">
+						<input id="RegiName" class="input-text" type="text" placeholder="Name">
+						<input id="RegiEmailAddres" class="input-text mt-2" type="email" placeholder="Email Address">
+						<input id="RegiPassword" class="mt-2 input-text" type="password" placeholder="Password">
+						<input id="RegiConfirmPassword" class="mt-2 input-text" type="password" placeholder="Confirm Password">
+					</div>
+					<div class="center mt-2">
+						<input onclick="return ValidateRegistrationForm();" class="Submit-Btn" type="submit" value="Sign Up" id="RegistrationitBtn">
+					</div>
+				</form>
+				<p class="center mt-2 already-have-account">
+					Already have an account? 
+					<a href="#" onclick="ShowLoginForm()">Login now</a>
+				</p>
+			</div>
+			<div id="ForgotPasswordForm" class="align-items-center text-center ">
+				<form action="">
+					<div class="center mt-4">
+						<input class="input-text " type="email" id="forgotPassEmail" placeholder="Email Address">
+					</div>
+					<div class="center mt-4">
+						<input onclick="return ValidateForgotPasswordForm();" class="Submit-Btn" type="submit" value="Reset Password" id="PasswordResetBtn" >
+					</div>
+				</form>
+				<p class="center mt-2 already-have-account">Back to the <a href="#" onclick="ShowLoginForm()">Login </a><a href="#" onclick="ShowRegistrationForm()">/ Registration </a></p>
+				
+			</div>
+		
+
+	
+</body>
+    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+     <script src="./Valmain.js" type="text/javascript"></script>
+	<script src="./validation.js" type="text/javascript"></script>
+</html>

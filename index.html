@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-LIBRARY</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./contact.css">
+    <!-- <link rel="stylesheet" href="./nav.css"> -->
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+      <div class=heropage>
+
+        <!-- NAVBAR -->
+        
+  <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between align-items-center card rounded-0 fixed-top">       
+    <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fas fa-book "></i> E-LIBRARY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse row" id="navbarNavDropdown">
+              <ul class="navbar-nav d-flex justify-content-around">
+                <li class="nav-item">
+                  <a class="nav-link px-3 active" aria-current="page" href="./About.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3" href="./Contact.html">Contact</a>
+                </li>
+
+                <!-- DROPDOWN -->
+                <li class="nav-item px-3 dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Discover
+                  </a>
+                  <ul class="dropdown-menu">
+                    <p class="text-dark-50 mt-2 mx-3 fw-bold">Genres</p>
+                    <li><a class="dropdown-item" href="./Browse genres/Adv.html">Action & Adventure</a></li>
+                    <li><a class="dropdown-item" href="./Browse genres/Biographies.html">Bios & History</a></li>
+                    <li><a class="dropdown-item" href="./Browse genres/children's.html">Children's</a></li>
+                      <li><a class="dropdown-item" href="./Browse genres/Fantay.html">Fantasy</a></li>
+                      <li><a class="dropdown-item" href="./Browse genres/Historical.htm">Historical Fiction</a></li>
+                    <li><a class="dropdown-item" href="./Browse genres/Horror.html">Horror</a></li>
+                    <li><a class="dropdown-item" href="./Browse genres/Literary.html">Literary Fiction</a></li>
+                    <li><a class="dropdown-item" href="./Browse genres/mystery.html">Mystery & Thriller</a></li>
+                    <li><a class="dropdown-item" href="./Browse genres/non-fiction.html">Non-Fiction</a></li>
+                      <li><a class="dropdown-item" href="./Browse genres/Romance.html">Romance</a></li>
+                    <li><a class="dropdown-item" href="./Browse genres/science.html">Science Fiction</a></li>
+                    <li><a class="dropdown-item" href="./Browse genres/children's.html">Young Adult</a></li>
+                  </ul>
+                </li>
+                <form class="d-flex">
+                  <!-- <button class="btn btn-secondary px-3 mx-2"><a class="text-decoration-none text-white" href="">Log In</a></button> -->
+                  <button class="btn btn-danger px-3"><a class="text-decoration-none text-white" href="./Reg.html">Register</a></button>  
+              </form>
+                <!-- <form class="d-flex">
+                  <button class="btn btn-danger px-3"><a class="text-decoration-none text-white" href="./Reg.html">Register</a></button>  
+              </form> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+        <!-- CONTENT -->
+
+    <div class="container text-center text-white">
+        <div class="row">
+            <div class="col-lg-8 m-auto content">
+                <h1 class="display-2 fw-bold lh-sm">WELCOME TO YOUR ONLINE LIBRARY</h1>
+                <p>Read.Listen.Learn.Repeat..</p>
+                
+               <div class="text-white position-absolute  mt-4">
+                   <p id="display" ></p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+</header>
+
+
+<!-- About Section Genres -->
+<!-- <h2 class="text-dark-50  mt-2 text-center ">Browse Genres <a class="text-success lead text-decoration-none bview" href="./booklib.html">.(view all)</a></h2> -->
+<h2 class="text-dark-50  mt-2 text-center ">Browse Genres.<button class="border-0  text-primary" id="myButton">(view all)</button></h2>
+
+
+<section class="container bg-white genres col-lg-12 col-md-3 col-12 m-3  position-relative">
+
+  <div class="bookscontainer row w-100">
+
+    <!-- Romance -->
+    <div class="col-lg-3 col-md-6 col-sm-6 mb-3 picCard text-white">
+      <img src="./image/Romance.png" alt="" class="image opacity-75">
+      <div class="eachbooktext text-align-center">
+        <a class="text-decoration-none" href="./Browse genres/Romance.html"><div class="text text-white text-center p-4">ROMANCE</div></a>
+
+        <!-- <a class="text text-white text-center p-4" href="./Bview.html">ROMANCE</a> -->
+        <!-- <div class="text text-white text-center p-4">ROMANCE</div> -->
+      </div>
+    </div>
+
+    <!-- Action -->
+    <div class="col-lg-3 col-md-6 col-sm-6 mb-3 picCard text-white">
+      <img src="./image/Action&Adv.png" alt="" class="image opacity-75">
+      <div class="eachbooktext text-align-center">
+        <a class="text-decoration-none" href="./Browse genres/Adv.html"><div class="text text-white text-center p-4">ACTION & ADVENTURE</div></a>
+      </div>
+    </div>
+
+    <!-- Mystery -->
+    <div class="col-lg-3 col-md-6 col-sm-6 mb-3 picCard text-white">
+      <img src="./image/mystery.png" alt="" class="image opacity-75">
+      <div class="eachbooktext text-align-center">
+        <a class="text-decoration-none" href="./Browse genres/mystery.html"><div class="text text-white text-center p-4">MYSTERY & THRILLER</div></a>
+      </div>
+    </div>
+
+     <!-- Biographies -->
+
+     <div class="col-lg-3 col-md-6 col-sm-6 mb-3 picCard text-white">
+      <img src="./image/Biographies.png" alt="" class="image opacity-75">
+      <div class="eachbooktext text-align-center">
+        <a class="text-decoration-none" href="./Browse genres/Biographies.html"><div class="text text-white text-center p-4">BIOGRAPHIES & HISTORY</div></a>
+      </div>
+    </div>
+
+
+    <!-- children -->
+
+    <div class="col-lg-3 col-md-6 col-sm-6 mb-3 picCard text-white">
+      <img src="./image/children's.png" alt="" class="image opacity-75">
+      <div class="eachbooktext text-align-center">
+        <a class="text-decoration-none" href="./Browse genres/children's.html"><div class="text text-white text-center p-4">CHILDREN'S</div></a>
+
+        <!-- <div class="text text-white text-center p-4">CHILDREN'S</div> -->
+      </div>
+    </div>
+
+
+     <!-- Young Adult -->
+
+     <div class="col-lg-3 col-md-6 col-sm-6 mb-3 picCard text-white">
+      <img src="./image/Young Adult.png" alt="" class="image opacity-75">
+      <div class="eachbooktext text-align-center">
+        <a class="text-decoration-none" href="./Browse genres/children's.html"><div class="text text-white text-center p-4">YOUNG ADULT</div></a>
+      </div>
+    </div>
+
+    <!-- <button class="btn btn-primary showbtn mt-4" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Show All</button> -->
+
+
+    <!-- fantasy -->
+
+    <div class="col-lg-3 col-md-6 col-sm-6 mb-3 picCard text-white">
+      <img src="./image/Fantasy.png" alt="" class="image opacity-75">
+      <div class="eachbooktext text-align-center">
+       <a class="text-decoration-none" href="./Browse genres/Fantay.html"><div class="text text-white text-center p-4">FANTASY</div></a>
+      </div>
+    </div>
+
+    
+      <!-- historical -->
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-3 picCard text-white">
+        <img src="./image/Historical.png" alt="" class="image opacity-75">
+        <div class="eachbooktext text-align-center">
+          <a class="text-decoration-none" href="./Browse genres/Historical.htm"><div class="text text-white text-center p-4">HISTORICAL FICTION</div></a>
+        </div>
+      </div>
+
+      <!-- horror -->
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-3 picCard text-white">
+        <img src="./image/Horror.png" alt="" class="image opacity-75">
+        <div class="eachbooktext text-align-center">
+          <a class="text-decoration-none" href="./Browse genres/Horror.html"><div class="text text-white text-center p-4">HORROR </div></a>
+        </div>
+      </div>
+
+       <!-- Literary -->
+
+       <div class="col-lg-3 col-md-6 col-sm-6 mb-3 picCard text-white">
+        <img src="./image/Literary.png" alt="" class="image opacity-75">
+        <div class="eachbooktext text-align-center">
+          <a class="text-decoration-none" href="./Browse genres/Literary.html"><div class="text text-white text-center p-4">LITERARY FICTION</div></a>
+        </div>
+      </div>
+      
+
+      <!-- Non-fiction -->
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-3 picCard text-white">
+        <img src="./image/Non-fiction.png" alt="" class="image opacity-75">
+        <div class="eachbooktext text-align-center">
+          <a class="text-decoration-none" href="./Browse genres/non-fiction.html"><div class="text text-white text-center p-4">NON-FICTION</div></a>
+        </div>
+      </div>
+
+       <!-- Science -->
+
+       <div class="col-lg-3 col-md-6 col-sm-6 mb-3 picCard text-white">
+        <img src="./image/Sience Fiction.png" alt="" class="image opacity-75">
+        <div class="eachbooktext text-align-center">
+          <a class="text-decoration-none" href="./Browse genres/science.html"><div class="text text-white text-center p-4">SCIENCE FICTION</div></a>
+        </div>
+      </div>       
+  </div>               
+</section>
+
+<!-- Trending Books Section -->
+<h2 class="text-dark-50  mt-2 text-center ">TRENDING BOOKS<button class="border-0  text-primary" id="trendingButton">(view all)</button></h2>
+
+<!-- <h2 class="text-dark-50  mt-2 text-center ">TRENDING BOOKS<a class="text-success lead text-decoration-none bview" href="./trending&ebooks.html">.(view all)</a></h2> -->
+
+<!-- <h2 class="text-dark-50  mt-2 text-center ">TRENDING BOOKS</h2> -->
+<section class="container bg-white genres mb-5  col-lg-12 col-md-3 col-12 m-3  position-relative">
+
+  <div class="bookscontainer row w-100">
+
+    <!-- Series starters -->
+
+    <div class="col-lg-3 col-md-6 col-sm-6 mb-5  picCard text-white">
+      <img src="./image/seriesstarter copy.jpg" alt="" class="image opacity-75">
+      <div class="text-align-center">
+        <div class=" text-black text-center p-4">Series Starters</div>
+      </div>
+    </div>
+
+    <!-- Match Maker -->
+
+    <div class="col-lg-3 col-md-6 col-sm-6 mb-5 picCard text-white">
+      <img src="./image/Match Maker.jpg" alt="" class="image opacity-75">
+      <div class=" text-align-center">
+        <div class=" text-black text-center p-4">Making of a Matchmaker</div>
+      </div>
+    </div>
+    
+    <!-- The black bag -->
+
+    <div class="col-lg-3 col-md-6 col-sm-6 mb-5 picCard text-white">
+      <img src="./image/The Black Bag.jpg" alt="" class="image opacity-75">
+      <div class=" text-align-center">
+        <div class="text-black text-center p-4">The Black Bag</div>
+      </div>
+    </div>
+
+     <!-- The secret -->
+
+     <div class="col-lg-3 col-md-6 col-sm-6 mb-5 picCard text-white">
+      <img src="./image/The secret.jpg" alt="" class="image opacity-75">
+      <div class="  text-align-center">
+        <div class=" text-black text-center p-4">The secret of Poppyridge Cove</div>
+      </div>
+    </div>     
+  </div>               
+</section>
+
+<!-- Footer Section -->
+<section class="footercontent  d-flex justify-content-between flex-wrap text-white">
+  <div class="leftfooter col-md-5">
+      <div class="firstcontent m-5">
+          <div class="fs-3 fw-bold text-decoration-underline">About Us</div>
+          <p class="lead">At E-Library our mission is to bring the power of reading to your world.</p>
+      </div>
+  <div class="secondcontent m-5">
+      <div class="fs-3 fw-bold text-decoration-underline">Contact Us</div>
+      <div class="phone-icons">
+          <a href="#"><i class="fas fa-phone-volume"></i>+234 802 611 0470</a>
+      </div>
+      <div class="mail-icons">
+          <a href="#"><i class="fas fa-envelope"></i>adeyinkaodunayo23@gmail.com</a>
+      </div>
+      
+  </div>
+  
+  </div>
+  <div class="footercontent d-flex justify-content-between flex-wrap m-5 ">
+      <div class="rightfooter col-12 col-md ">
+          <div class="fs-4">Subscribe Us</div>
+          <form action="" class="mt-3">
+              <input type="text" class="text-white" placeholder="Enter Your Email">
+              <input onclick="mail()"  type="submit" class= "mt-3" value="send"  id="subscribe">
+              <div class="social-icons text-align-center">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i ></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class=" fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class=" fab fa-telegram"></i></a>   
+              </div>
+          </form>
+          <div class="footerbottom m-3 ">
+              <p>© 2023 <a href="#">E-library</a>All rights reserved</p>
+          </div>
+      </div>
+
+      
+</div>
+
+</section>
+
+ <!-- to scroll back up when the page is in the low part -->
+
+
+<button onclick="topFunction()"  id="topBtn"  title="Go to top">Top</button>
+
+
+
+
+
+
+</body>
+<script src="./main.js"></script>
+
+<script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+
+</html>

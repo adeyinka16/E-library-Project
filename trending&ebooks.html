@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5ed731a5e8.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="./ebooks.css">
+<!-- <link rel="stylesheet" href="./index.css"> -->
+</head>
+<body>
+
+    <!-- <input type="text" name="search" placeholder="Search.."> -->
+    
+    <div class="search-box">
+        <button class="btn-search"><i class="fas fa-search"></i></button>
+        <input type="text" class="input-search" placeholder="Search For Books...">
+      </div>
+ 
+
+      <h2 class="text-white text-center">TRENDING</h2>
+      <section class="container mb-5  col-lg-12 col-md-3 col-12 m-3  position-relative">
+        <div class="bookscontainer row w-100">
+         <div class="image-scroll-wrapper tran img">
+        <div class="image-container">
+
+          <!-- Dark Desire -->
+           <div class="col-lg-3 col-md-6 col-sm-6 mb-5  text-white"> 
+          <div class="image-wrapper">
+            <img src="./image/Trending/dark desire.jpg">
+            <div class="caption">
+              <p class="text-white">Dark Desire</p>
+              <button id="download-btn" onclick="addToCart()">Download</button>
+            </div>
+            <!-- <button class="btn btn-dark mt-3" id="myButton">Read Story</button> -->
+
+            <a href=""><span>Read story</span></a>
+            <!-- <div class="wrapper">
+              </div> -->
+          </div>
+          </div>
+
+          <!-- Evocatus Inception -->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5  text-white">
+          <div class="image-wrapper tran">
+            <img src="./image/Trending/evocatus inception.jpg" alt="">
+            <div class="caption">
+              <p class="text-white">Evocatus Inception</p>
+              <button id="download-btn" onclick="addToCart()">Download</button>
+            </div>
+            <a href=""><span>Read story</span></a>
+          </div>
+          </div>
+
+          <!-- Black Bag -->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5  text-white">
+          <div class="image-wrapper tran" >
+            <img src="./image/The Black Bag.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">The Black Bag</p>
+              <button id="download-btn" onclick="addToCart()">Download</button>
+            </div>
+            <a href=""><span>Read story</span></a>
+          </div>
+          </div>
+
+          <!-- Series Starters -->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5  text-white">
+          <div class="image-wrapper tran">
+            <img src="./image/seriesstarter copy.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">TK Eldridge's Series Starters</p>
+              <button id="download-btn" onclick="addToCart()">Download</button>
+            </div>
+            <a href=""><span>Read story</span></a>
+          </div>
+          </div>
+
+          <!-- Grave Mistake -->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5  text-white">
+          <div class="image-wrapper tran">
+            <img src="./image/Trending/grave mistake.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">Grave Mistake</p>
+              <button id="download-btn" onclick="addToCart()">Download</button>
+            </div>
+            <a href=""><span>Read story</span></a>
+          </div>
+          </div>
+
+          <!-- Matchmaker -->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5  text-white">
+          <div class="image-wrapper tran">
+            <img src="./image/Match Maker.jpg"alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">The Making Of A Matchmaker</p>
+              <button id="download-btn" onclick="addToCart()">Download</button>
+            </div>
+            <a href=""><span>Read story</span></a>
+          </div>
+          </div>
+
+          
+          <!-- legend is born -->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5  text-white">
+            <div class="image-wrapper tran">
+              <img src="./image/Trending/the legend is born.jpg"alt="">
+              <div class="caption">
+                <p class="text-white font-weight-bold">The Legend Is Born</p>
+                <button id="download-btn" onclick="addToCart()">Download</button>
+              </div>
+              <a href=""><span>Read story</span></a>
+            </div>
+            </div>
+
+          <!-- Trading Knives -->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5  text-white">
+            <div class="image-wrapper tran">
+              <img src="./image/Trading Knives.jpg"alt="">
+              <div class="caption">
+                <p class="text-white font-weight-bold">Trading Knives</p>
+                <button id="download-btn" onclick="addToCart()">Download</button>
+              </div>
+              <a href=""><span>Read story</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Book Section 2 -->
+
+      <h2 class="text-white text-center">FREE EBOOKS</h2>
+      <section class="container mb-5  col-lg-12 col-md-3 col-12 m-3  position-relative">
+        <div class="bookscontainer row w-100">
+         <div class="image-scroll-wrapper tran img">
+        <div class="image-container">
+
+          <!-- if love is a blessing-->
+           <div class="col-lg-3 col-md-6 col-sm-6 mb-5  text-white"> 
+          <div class="image-wrapper">
+            <img src="./image/if-love-is-a-blessing_cover-6-x-9.jpg">
+            <div class="caption">
+              <p class="text-white">If Love Is A Blessing</p>
+              <buttonl id="download-btn" onclick="addToCart()">Download</button>
+            </div>
+            <a href=""><span>Read story</span></a>
+            <!-- <div class="wrapper">
+              </div> -->
+          </div>
+          </div>
+
+          <!-- Wild Heart-->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5  text-white">
+          <div class="image-wrapper tran">
+            <img src="./image/Trending/wild heart .png" alt="">
+            <div class="caption">
+              <p class="text-white">Wild Heart</p>
+              <button id="download-btn" onclick="addToCart()">Download</button>
+            </div>
+            <a href=""><span>Read story</span></a>
+          </div>
+          </div>
+
+          <!--great an terrible-->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5  text-white">
+          <div class="image-wrapper tran" >
+            <img src="./image/Trending/great-and-terrible-shadow-man.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">Shadow Man</p>
+              <button id="download-btn" onclick="addToCart()">Download</button>
+            </div>
+            <a href=""><span>Read story</span></a>
+          </div>
+          </div>
+
+          <!-- The girl who sees -->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5  text-white">
+          <div class="image-wrapper tran">
+            <img src="./image/Trending/the girl who sees.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">The Girl Who Sees</p>
+              <button id="download-btn" onclick="addToCart()">Dowwnload</button>
+            </div>
+            <a href=""><span>Read story</span></a>
+          </div>
+          </div>
+
+          <!-- chipper sunshine -->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5  text-white">
+          <div class="image-wrapper tran">
+            <img src="./image/Trending/chippersunshine_book_8.5x8.5_paperbackcvrs_final-front.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">Chipper Sunshine</p>
+              <button id="download-btn" onclick="addToCart()">Download</button>
+            </div>
+            <a href=""><span>Read story</span></a>
+          </div>
+          </div>
+
+          <!-- terminal chase -->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5  text-white">
+          <div class="image-wrapper tran">
+            <img src="./image/Trending/terminal-chase-coverfront-[20-02-23].jpg"alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">Terminal Chase</p>
+              <button id="download-btn" onclick="addToCart()">Download</button>
+            </div>
+            <a href=""><span>Read story</span></a>
+          </div>
+          </div>
+
+          
+          <!-- silenced-->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5  text-white">
+            <div class="image-wrapper tran">
+              <img src="./image/Trending/silenced_6x9.jpg"alt="">
+              <div class="caption">
+                <p class="text-white font-weight-bold">Silenced</p>
+                <button id="download-btn" onclick="addToCart()">Download</button>
+              </div>
+              <a href=""><span>Read story</span></a>
+            </div>
+            </div>
+
+          <!-- Daredevils -->
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5  text-white">
+            <div class="image-wrapper tran">
+              <img src="./image/Trending/hughes new1.jpg"alt="">
+              <div class="caption">
+                <p class="text-white font-weight-bold">Daredevils</p>
+                <button id="download-btn" onclick="addToCart()">Download</button>
+              </div>
+              <a href=""><span>Read story</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+   
+<!-- <h1 class="text-white text-center">TRENDING</h1>
+
+    <div class="image-scroll-wrapper tran img">
+        <div class="image-container">
+          <div class="image-wrapper">
+            <img src="./image/Trending/dark desire.jpg">
+            <div class="caption">
+              <p class="text-white">Dark Desire</p>
+              <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./stephenk.html"><span>Read story</span></a>
+            <div class="wrapper">
+               
+              </div>
+          </div>
+          <div class="image-wrapper tran">
+            <img src="./image/Trending/evocatus inception.jpg" alt="">
+           
+        >
+      </div>
+
+      <section>
+        <h1 class="text-white text-center b">Books We Love</h1>
+
+    <div class="image-scroll-wrapper tran img">
+        <div class="image-container">
+          <div class="image-wrapper">
+            <img src="./img/love1.jpg"alt="">
+            <div class="caption">
+              <p class="text-white">lan mecman</p>
+              <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./forbiddent.html"><span>Read story</span></a>
+            <div class="wrapper">
+               
+              </div>
+          </div>
+          <div class="image-wrapper tran">
+            <img src="./img/love2.jpg" alt="">
+            <div class="caption">
+              <p class="text-white">full dark, no stars</p>
+              <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./fulldark.html"><span>Read story</span></a>
+          </div>
+          <div class="image-wrapper tran">
+            <img src="./img/love3.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">Harry Potter</p>
+              <button class="btn-danger" id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./harrypott.html"><span>Read story</span></a>
+          </div>
+          <div class="image-wrapper tran">
+            <img src="./img/new5.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">The  maddest obssesion</p>
+              <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./obss.html"><span>Read story</span></a>
+          </div>
+          <div class="image-wrapper tran">
+            <img src="./img/love4.jpg"alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">tom clancy</p>
+              <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./tom.html"><span>Read story</span></a>
+          </div>
+          <div class="image-wrapper tran">
+            <img src="./img/love7.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">The space marchants</p>
+              <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./march.html"><span>Read story</span></a>
+          </div>
+          <div class="image-wrapper tran">
+            <img src="./img/love8.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">Musicophila</p>
+              <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./paperto.html"><span>Read story</span></a>
+          </div>
+          <div class="image-wrappertran ">
+            <img class="" src="./img/new1.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">a court of mist and fury</p>
+              <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./stephenit.html"><span class="font-weight-bold">Read story</span></a>
+          </div>
+        </div>
+      </div>
+
+
+      </section>
+
+      <section>
+        <h1 class="text-white text-center b">Romance</h1>
+
+    <div class="image-scroll-wrapper img">
+        <div class="image-container">
+          <div class="image-wrapper" alt>
+            <img src="./img/more1.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">Megan Hart</p>
+              <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./meganhart.html"><span>Read story</span></a>
+            <div class="wrapper">
+               
+              </div>
+          </div>
+          <div class="image-wrapper tran">
+            <img src="./img/romanc20.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">Paper Towns</p>
+              <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./paperto.html"><span>Read story</span></a>
+          </div>
+          <div class="image-wrapper tran">
+            <img src="./img/roman26.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">Temptation</p>
+              <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./tempting.html"><span>Read story</span></a>
+          </div>
+          <div class="image-wrapper tran">
+            <img src="./img/romancc24.jpg" alt="">
+            <div class="caption">
+              <p  class="text-white font-weight-bold">Emma Darcy</p>
+              <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./emma.html"><span>Read story</span></a>
+          </div>
+          <div class="image-wrapper tran">
+            <img src="./img/romanc22.jpg"alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">A Taste Of The Forbidden</p>
+              <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./forbiddent.html"><span>Read story</span></a>
+          </div>
+          <div class="image-wrapper tran">
+            <img src="./img/romanc23.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">Melanie Milburne</p>
+              <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./melanine.html"><span>Read story</span></a>
+          </div>
+          <div class="image-wrapper tran">
+            <img src="./img/roman21.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">Diana Hamilton</p>
+              <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./tempting.html"><span>Read story</span></a>
+          </div>
+          <div class="image-wrapper tran">
+            <img src="./img/rom9.jpg" alt="">
+            <div class="caption">
+              <p class="text-white font-weight-bold">Jessica Steele</p>
+              <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+            <a href="./tom.html"><span>Read story</span></a>
+          </div>
+        </div>
+      </div>
+
+      </section> -->
+
+<style>
+     /* .tran :hover {
+     transform: scalex(1.1);
+     transition: 0.7s ease; 
+    opacity: 0.7;
+    margin-top: 5px;
+  } */
+  
+
+    /* .image-scroll-wrapper {
+  overflow-x: scroll;
+} */
+#download-btn {
+  background-color: steelblue;
+  border:none;
+  margin: 4px 2px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  /* border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; */
+}
+#download-btn:hover{
+    background-color:#4CA;
+    opacity: 0.6;
+
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-wrapper {
+  flex: 0 0 auto;
+  margin-right: 15px;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.caption p {
+  margin: 0;
+}
+
+.image-wrapper:hover .caption {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .image-wrapper {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .image-wrapper {
+    margin-right: 5px;
+  }
+}
+
+</style>      
+
+
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   <script>
+
+
+const searchBox = document.querySelector('.input-search');
+const images = document.querySelectorAll('.image-wrapper');
+
+searchBox.addEventListener('keyup', (e) => {
+  const searchString = e.target.value.toLowerCase();
+
+  images.forEach(image => {
+    const caption = image.querySelector('.caption').textContent.toLowerCase();
+    const altText = image.querySelector('img').alt.toLowerCase();
+    if (caption.includes(searchString) || altText.includes(searchString)) {
+      image.style.display = 'block';
+    } else {
+      image.style.display = 'none';
+    }
+  });
+});
+// cart
+function addToCart() {
+  alert('product has been added to cart')
+
+}
+
+
+
+
+
+   </script>
+</html>

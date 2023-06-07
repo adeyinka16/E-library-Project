@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* background-color: burlywood; */
+
+}
+
+#feedback{
+    background-color: burlywood;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+section{
+    background-color: black;
+    /* bottom: 0; */
+    /* left: 0; */
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    width: 100%;
+    /* height: 100vh; */
+}
+section .footercontent{
+    max-width: 1350px !important;
+    margin: auto;
+    padding: 15px;
+}
+section .footercontent .rightfooter input[type="submit"]{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid rgb(93, 23, 23);
+    background-color: blanchedalmond;
+}
+section .footercontent .rightfooter input[type="submit"]:hover{
+    background-color: saddlebrown;
+    color: whitesmoke;
+}
+
+section .footercontent .rightfooter input[type="text"]{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 25px;
+    border: 2px solid blanchedalmond ;
+    background-color: black;
+}
+section .footercontent .social-icons a{
+    width: 30px;
+    height: 30px;
+    /* background-color: bisque; */
+    margin: 20px 5px 0 0;
+    font-size: 20px;
+    display: inline-block;
+}
+section .footercontent .social-icons a:hover{
+    background-color: blanchedalmond;
+}
+
+

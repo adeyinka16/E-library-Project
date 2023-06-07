@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma...</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+
+</head>
+<body>
+    <div class="text-center">
+        <h3 class="fs-3 mt-5">Emma</h3>
+        <span>By  <span class="text-success">Jane Austen</span></span>
+       <div class="image-cont mt-5" id="image">
+        <img src="/image/Romance/Emma.jpg" alt="">
+       </div>
+       <button class="btn btn-dark mt-3" id="myButton">Read Story</button>
+        <button class="btn btn-dark mt-3 " onclick="downloadFile()">Download</button>
+    </div>
+    
+    
+</body>
+<script>
+
+    // to read story
+    const button = document.getElementById('myButton');
+    // add a click event listener to the button
+    button.addEventListener('click', function() {
+      //To  redirect the user to another page
+      window.location.href = './emmma.html';
+    });
+
+        //  download file/book
+    function downloadFile() {
+      // Create a dummy anchor element
+      const link = document.createElement('a');
+      link.style.display = 'none';
+      document.body.appendChild(link);
+
+      // Set the file URL and name
+      link.href = 'emmma.html';
+      link.download = 'emmma.html';
+
+      // Trigger the download
+      link.click();
+    
+      // Clean up
+      document.body.removeChild(link);
+    
+    }
+    </script>
+</html>

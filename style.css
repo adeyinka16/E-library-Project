@@ -1,0 +1,170 @@
+/* * { */
+  /* margin: 0;
+  padding: 0; */
+  /* max-width: 100%; */
+  /* box-sizing: border-box; */
+
+   /* overflow-x: hidden; */
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+/* } */
+html,body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+ body {
+  max-width: 100%;
+     /* overflow-y: hidden;  */
+
+ }
+.heropage{
+  background-image: url(./image/modern-big-library-design-black-wooden-library-with-wooden-parquet-realistic-3d-rendering_626958-37.jpg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  /* background-color: blue; */
+ max-width: 100%;
+  height: 100vh;
+}
+
+.content{
+  position: absolute;
+  top: 50% !important;
+  left: 50%;
+  transform: translate(-50%,-50%);    
+
+}
+.navbar-toggler{
+  background-color: whitesmoke;
+}
+
+header .navbar {
+  background-color: black !important;
+  
+}
+header .navbar a{
+  color: white !important;
+}
+header .navbar-brand:hover {
+  color: firebrick !important;
+}
+.navbar-nav a:hover{
+  background-color: sienna;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
+.dropdown-item{
+  background-color: black;
+}
+
+.image{
+  /* margin-right: 5px; */
+  opacity: 1 !important;
+  display: block !important;
+  /* width: 270px !important; */
+  /* height: 270px !important; */
+  transition: .5s ease !important;
+  /* backface-visibility: hidden !important; */
+}
+.image:hover{
+  opacity: 0.4 !important;
+  /* background: transparent ; */
+}
+.eachbooktext{
+  position: absolute;
+  transition: .5s ease !important;
+  top: 35%;
+  opacity: 0.6;
+
+}
+.genres{
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-left: 5% !important;
+}
+
+.text{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  
+}
+
+
+
+ .picCard {
+  height: 200px;
+  position: relative;
+  /* background-color: yellow; */
+}
+
+
+ .picCard img {
+  width: 100%;
+  height: 100%;
+ }
+
+ .Top{
+  position: fixed;
+ }
+
+ 
+ #topBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 35px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: blue; 
+  color: white; 
+  cursor: pointer; 
+  padding: 10px; 
+  border-radius: 100px; 
+  font-size: 18px; 
+}
+#topBtn:hover{
+  background-color: burlywood;
+}
+.bview:hover{
+  color: blue !important;
+  text-decoration: underline !important;
+
+}
+ 
+
+ /* #topBtn {
+  display: none; 
+  position: fixed; 
+  top: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  /* background-color: red;  */
+  /* color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+} */ 
+
+
+
+
+
+
+
+
+
